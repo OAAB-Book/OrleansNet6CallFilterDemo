@@ -1,0 +1,7 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Orleans Call Filter Demo" type="CompoundRunConfigurationType">
+    <toRun name="OrleansNet6CallFilter.Silo.WorkerService" type="LaunchSettings" />
+    <toRun name="OrleansNet6CallFilter.Client.Console" type="DotNetProject" />
+    <method v="2" />
+  </configuration>
+</component>

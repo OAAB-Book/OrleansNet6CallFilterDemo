@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <UserSecretsId>dotnet-OrleansNet6CallFilter.Silo.WorkerService-8F92F308-8D29-4BC9-A7EE-BCB334DD76C5</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+        <PackageReference Include="Microsoft.Orleans.Server" Version="3.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Grains\OrleansNet6CallFilter.Grains.Greetings\OrleansNet6CallFilter.Grains.Greetings.csproj" />
+    </ItemGroup>
+</Project>
