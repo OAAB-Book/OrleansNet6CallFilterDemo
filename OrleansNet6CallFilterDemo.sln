@@ -13,15 +13,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{AAFD5F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{ADF9D24B-3B96-464F-9EC0-C7AAA91A72AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6CallFilter.Interfaces.DemoRpcs", "src\Shared\OrleansNet6CallFilter.Interfaces.DemoRpcs\OrleansNet6CallFilter.Interfaces.DemoRpcs.csproj", "{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Interfaces.DemoRpcs", "src\Shared\OrleansNet6CallFilter.Interfaces.DemoRpcs\OrleansNet6CallFilter.Interfaces.DemoRpcs.csproj", "{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6CallFilter.Grains.Greetings", "src\Grains\OrleansNet6CallFilter.Grains.Greetings\OrleansNet6CallFilter.Grains.Greetings.csproj", "{BFFB029C-44D2-434F-ACCF-85C56349F8A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Grains.Greetings", "src\Grains\OrleansNet6CallFilter.Grains.Greetings\OrleansNet6CallFilter.Grains.Greetings.csproj", "{BFFB029C-44D2-434F-ACCF-85C56349F8A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6CallFilter.Silo.WorkerService", "src\Hosting\Server\OrleansNet6CallFilter.Silo.WorkerService\OrleansNet6CallFilter.Silo.WorkerService.csproj", "{8ABC1F10-1958-402F-8D66-D0A6BAE32998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Silo.WorkerService", "src\Hosting\Server\OrleansNet6CallFilter.Silo.WorkerService\OrleansNet6CallFilter.Silo.WorkerService.csproj", "{8ABC1F10-1958-402F-8D66-D0A6BAE32998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansNet6CallFilter.Client.Console", "src\Hosting\Client\OrleansNet6CallFilter.Client.Console\OrleansNet6CallFilter.Client.Console.csproj", "{19AFDC6C-201A-477B-A485-295CB4B6C3AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Client.Console", "src\Hosting\Client\OrleansNet6CallFilter.Client.Console\OrleansNet6CallFilter.Client.Console.csproj", "{19AFDC6C-201A-477B-A485-295CB4B6C3AC}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Demo|Any CPU = Demo|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{BFFB029C-44D2-434F-ACCF-85C56349F8A8}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFB029C-44D2-434F-ACCF-85C56349F8A8}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{8ABC1F10-1958-402F-8D66-D0A6BAE32998}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABC1F10-1958-402F-8D66-D0A6BAE32998}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{19AFDC6C-201A-477B-A485-295CB4B6C3AC}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AFDC6C-201A-477B-A485-295CB4B6C3AC}.Demo|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -35,18 +48,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2BC7D9D-6C7E-46D5-953E-D04233089CFE}
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
-		{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}.Demo|Any CPU.Build.0 = Demo|Any CPU
-		{BFFB029C-44D2-434F-ACCF-85C56349F8A8}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFFB029C-44D2-434F-ACCF-85C56349F8A8}.Demo|Any CPU.Build.0 = Debug|Any CPU
-		{8ABC1F10-1958-402F-8D66-D0A6BAE32998}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
-		{8ABC1F10-1958-402F-8D66-D0A6BAE32998}.Demo|Any CPU.Build.0 = Debug|Any CPU
-		{19AFDC6C-201A-477B-A485-295CB4B6C3AC}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
-		{19AFDC6C-201A-477B-A485-295CB4B6C3AC}.Demo|Any CPU.Build.0 = Debug|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Demo|Any CPU = Demo|Any CPU
 	EndGlobalSection
 EndGlobal

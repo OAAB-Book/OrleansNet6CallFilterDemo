@@ -2,8 +2,9 @@ using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
 using OrleansNet6CallFilter.Grains.Greetings;
+using OrleansNet6CallFilter.Silo.WorkerService.CallFilters;
 
-IHost host = Host.CreateDefaultBuilder(args)
+var host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         services.AddLogging(logBuilder =>
@@ -28,7 +29,8 @@ IHost host = Host.CreateDefaultBuilder(args)
             {
                 parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences();
                 parts.AddApplicationPart(typeof(AlohaGrain).Assembly).WithReferences();
-            });
+            })
+            .AddIncomingGrainCallFilter<LoggingCallFilter>();
     })
     .Build();
 

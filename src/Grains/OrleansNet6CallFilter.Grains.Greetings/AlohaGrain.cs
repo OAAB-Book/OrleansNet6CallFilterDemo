@@ -8,11 +8,18 @@ public class AlohaGrain : Grain, IAlohaGrain
 {
     public Task<string> SayAloha(int alohaCount = 1)
     {
+        if (alohaCount < 1)
+        {
+            throw new Exception("Aloha count must be greater than 0.");
+        }
+
         var output = new StringBuilder();
         for (var i = 0; i < alohaCount; i++)
         {
             output.AppendLine("Aloha!");
         }
-        return Task.FromResult(output.ToString());
+
+        var result = output.ToString().TrimEnd('\r', '\n');
+        return Task.FromResult(result);
     }
 }
