@@ -16,6 +16,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\Grains\OrleansNet6CallFilter.Grains.Greetings\OrleansNet6CallFilter.Grains.Greetings.csproj" />
+      <ProjectReference Include="..\..\..\Grains\OrleansNet6CallFilter.Grains\OrleansNet6CallFilter.Grains.csproj" />
     </ItemGroup>
 </Project>

@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{ADF9D2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Interfaces.DemoRpcs", "src\Shared\OrleansNet6CallFilter.Interfaces.DemoRpcs\OrleansNet6CallFilter.Interfaces.DemoRpcs.csproj", "{F1B004A7-045B-4B08-AE81-E4C293BC1DD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Grains.Greetings", "src\Grains\OrleansNet6CallFilter.Grains.Greetings\OrleansNet6CallFilter.Grains.Greetings.csproj", "{BFFB029C-44D2-434F-ACCF-85C56349F8A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Grains", "src\Grains\OrleansNet6CallFilter.Grains\OrleansNet6CallFilter.Grains.csproj", "{BFFB029C-44D2-434F-ACCF-85C56349F8A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansNet6CallFilter.Silo.WorkerService", "src\Hosting\Server\OrleansNet6CallFilter.Silo.WorkerService\OrleansNet6CallFilter.Silo.WorkerService.csproj", "{8ABC1F10-1958-402F-8D66-D0A6BAE32998}"
 EndProject

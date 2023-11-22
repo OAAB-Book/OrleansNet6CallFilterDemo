@@ -1,7 +1,7 @@
 ﻿using Orleans;
 using OrleansNet6CallFilter.Interfaces.DemoRpcs;
 
-namespace OrleansNet6CallFilter.Grains.Greetings;
+namespace OrleansNet6CallFilter.Grains;
 
 public class HelloGrain : Grain, IHelloGrain
 {

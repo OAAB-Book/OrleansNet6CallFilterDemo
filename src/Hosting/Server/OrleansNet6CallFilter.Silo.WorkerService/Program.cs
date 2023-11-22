@@ -1,7 +1,7 @@
 using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
-using OrleansNet6CallFilter.Grains.Greetings;
+using OrleansNet6CallFilter.Grains;
 using OrleansNet6CallFilter.Silo.WorkerService.CallFilters;
 
 var host = Host.CreateDefaultBuilder(args)
