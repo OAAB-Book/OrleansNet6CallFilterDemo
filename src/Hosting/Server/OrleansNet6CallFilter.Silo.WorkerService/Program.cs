@@ -29,6 +29,9 @@ var host = Host.CreateDefaultBuilder(args)
             {
                 parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences();
                 parts.AddApplicationPart(typeof(AlohaGrain).Assembly).WithReferences();
+                parts.AddApplicationPart(typeof(Grain_1).Assembly).WithReferences();
+                parts.AddApplicationPart(typeof(Grain_2).Assembly).WithReferences();
+                parts.AddApplicationPart(typeof(Grain_3).Assembly).WithReferences();
             })
             .AddIncomingGrainCallFilter<LoggingCallFilter>();
     })

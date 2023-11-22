@@ -10,7 +10,7 @@ public class AlohaGrain : Grain, IAlohaGrain
     {
         if (alohaCount < 1)
         {
-            throw new Exception("Aloha count must be greater than 0.");
+            throw new ArgumentException("Aloha count must be greater than 0.");
         }
 
         var output = new StringBuilder();

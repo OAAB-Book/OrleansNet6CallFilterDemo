@@ -38,7 +38,7 @@ WriteLine(
 ReadKey();
 await client.Connect();
 
-WriteLine("\r\n---\r\nOrleans Client connected, press any key to start Grain RPC calling demo.\r\n---");
+WriteLine("\r\n---\r\nOrleans Client connected, press any key to start Silo level Call Filter demo...\r\n---");
 ReadKey();
 
 var helloGrain = client.GetGrain<IHelloGrain>(0);
@@ -63,6 +63,13 @@ catch (Exception ex)
 
 var anotherAlohaResult = await alohaGrain02.SayAloha(3);
 WriteLine($"\r\n---\r\nCall Another Aloha Grain.SayAloha(3) =\r\n{anotherAlohaResult}\r\n---");
+
+WriteLine("\r\n---\r\nPress any key to run Grain level Call Filter Demo...\r\n---");
+ReadKey();
+
+var grainA = client.GetGrain<IGrainA>(Guid.NewGuid());
+var callStackStr = await grainA.DemoRpc();
+WriteLine($"\r\n---\r\nCall GrainA.DemoRpc() =\r\n{callStackStr}\r\n---");
 
 WriteLine("\r\n---\r\nDemonstration finished, press any key to exit...\r\n---");
 ReadKey();
