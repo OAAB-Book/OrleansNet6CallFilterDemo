@@ -3,6 +3,7 @@ using Orleans.Runtime;
 
 namespace OrleansNet6CallFilter.Silo.WorkerService.CallFilters;
 
+// ReSharper disable once ClassNeverInstantiated.Global
 public class LoggingCallFilter : IIncomingGrainCallFilter
 {
     private readonly ILogger<LoggingCallFilter> _logger;
@@ -22,7 +23,8 @@ public class LoggingCallFilter : IIncomingGrainCallFilter
             if (methodSignature is
                 "Orleans.Runtime.MembershipService.MembershipTableSystemTarget" or
                 "Orleans.Runtime.DeploymentLoadPublisher" or
-                "Orleans.Runtime.OrleansCodeGenClusterTypeManagerReference")
+                "Orleans.Runtime.OrleansCodeGenClusterTypeManagerReference" or 
+                "Orleans.Runtime.TypeManager" )
             {
                 // don't log Orleans Runtime internal RPC invocations
             }
